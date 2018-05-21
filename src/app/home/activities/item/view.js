@@ -14,20 +14,10 @@ export default Mn.View.extend({
     this.model.on('sync', this.render);
   },
 
-  onRender(){
-    /* const self = this;
-    this.parameterModel = new ParameterModel();
-    this.parameterModel.fetch({
-      data: { keyParameter: 'minimum_priority'},
-      success(response) {
-        self.parameterModel = response.toJSON();
-      }
-    }); */
-  },
-
   serializeData() {
     return {
-      fromNow: moment(this.model.attributes.date, "YYYYMMDD h:mm:ss a").fromNow()
+      activity: this.model.attributes,
+      fromNow: moment(this.model.attributes.createdAt, "YYYYMMDD h:mm:ss a").fromNow()
     };
   }
 });
