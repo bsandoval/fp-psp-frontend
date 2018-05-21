@@ -35,8 +35,10 @@ export default Mn.View.extend({
   onRender() {
     if (this.model.get('id')) {
       this.app.updateSubHeader(storage.getSubHeaderItems(this.model));
+    }
 
-      const activityFeed = this.$el.find('#activity-feed');
+    if(this.activities){
+      const activityFeed = this.$el.find('#activity-feed-admin');
       activityFeed.empty();
       this.activities.each(model => {
         const item = new FeedItem({ model });

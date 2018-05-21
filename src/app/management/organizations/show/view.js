@@ -42,7 +42,7 @@ export default Mn.View.extend({
       $('#sub-header .navbar-header > .navbar-brand').addClass('subActive');
     }
 
-    const activityFeed = this.$el.find('#activity-feed');
+    const activityFeed = this.$el.find('#activity-feed-hub');
     activityFeed.empty();
     this.activities.each(model => {
       const item = new FeedItem({ model });
