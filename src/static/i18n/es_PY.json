@@ -269,6 +269,7 @@
     "password": "Contraseña",
     "login": "INICIAR SESIÓN",
     "forgot-pass": "¿Olvidó su contraseña?",
+    "go-form": "Registrarse",
     "email": "Correo electrónico",
     "reset-pass": "Cambiar Contraseña",
     "back-login": "Volver al inicio de sesión",
@@ -362,7 +363,8 @@
   "footer": {
     "version": {
       "title": "VERSION WEB",
-      "name": "SEMAFORO DE ELIMINACIÓN DE POBREZA"
+      "name": "SEMAFORO DE ELIMINACIÓN DE POBREZA",
+      "platform": "PLATAFORMA"
     }
   },
   "report": {
